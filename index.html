@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="top-menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Nhập hàng</a></li>
+                <li><a href="#">Xuất hàng</a></li>
+                <li><a href="#">Cập nhật</a></li>
+                <li><a href="#">In ấn</a></li>
+                <li><a href="#">Tìm kiếm</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main-container">
+        <aside class="button-menu">
+            <button onclick="showContent('cap-nhat')">Cập nhật</button>
+            <button onclick="showContent('nhap-hang')">Nhập hàng</button>
+            <button onclick="showContent('xuat-hang')">Xuất hàng</button>
+            <button onclick="showContent('in-an')">In ấn</button>
+            <button onclick="showContent('tim-kiem')">Tìm kiếm</button>
+        </aside>
+        
+        <section class="content-display">
+            <div id="cap-nhat" class="content hidden">
+                <h2>Cập nhật</h2>
+                <ul>
+                    <li><a href="#">Nhà sản xuất</a></li>
+                    <li><a href="#">Khách hàng</a></li>
+                    <li><a href="#">Nhân viên</a></li>
+                </ul>
+            </div>
+            <div id="nhap-hang" class="content hidden">
+                <h2>Nhập hàng</h2>
+            </div>
+            <div id="xuat-hang" class="content hidden">
+                <h2>Xuất hàng</h2>
+            </div>
+            <div id="in-an" class="content hidden">
+                <h2>In ấn</h2>
+            </div>
+            <div id="tim-kiem" class="content hidden">
+                <h2>Tìm kiếm</h2>
+            </div>
+        </section>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
